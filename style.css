@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0c0c0c;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID BACKGROUND */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* CARD */
+.card {
+    width: 380px;
+    background: #111;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(255, 200, 120, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h2 {
+    font-size: 20px;
+}
+
+.title p {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* TAB */
+.tabs {
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #aaa;
+}
+
+.tab.active {
+    background: #2a2a2a;
+    color: #f5c27a;
+}
+
+/* INPUT */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #d4af7a;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid #333;
+    color: #aaa;
+}
+
+/* NOTE */
+.note {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin: 10px 0;
+}
